@@ -1,0 +1,7 @@
+- if @token 
+  %div= @token.inspect
+%br/
+Update all my leads with Resque
+%form{:action => "/workers/updatelead", :method => "POST"}
+  %input{:type => "textfield", :name => "leadsource"}
+
